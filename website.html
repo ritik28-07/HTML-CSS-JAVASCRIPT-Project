@@ -1,0 +1,151 @@
+<html>
+<style>
+*{
+    margin: 0; padding: 0;box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+}
+header{
+    animation: changeback 20s infinite alternate;    
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+nav{
+    width: 100%; height: 15vh;
+    background: rgba(0,0,0,0.2);
+    color: white; 
+    background-origin: padding-box;
+    display: flex; 
+    justify-content: space-between;
+    align-items: center; text-transform: uppercase;
+    background-repeat: no-repeat;
+  
+}
+nav .logo{
+    width: 25%; text-align: center;
+
+}
+nav .menu{
+    width: 40%;
+    display: flex; justify-content: space-around;
+     
+}
+nav .menu a{
+    width: 25%;
+    text-decoration: none; color: white;
+    font-weight: bold;
+}
+nav .menu a:first-child{
+    color: white;
+}
+main{
+    width: 100%;
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center; color: white;
+}
+section h3{
+    font-size: 35px; font-weight: 200; letter-spacing: 3px;
+    text-shadow: 1px 1px 2px black;
+}
+section h1{
+    margin: 30px 0 20px 0;
+    font-size: 55px;
+    font-weight: 700;
+    text-shadow: 2px 1px 5px black;
+    text-transform: uppercase;
+}
+section p{
+    font-size: 25px;
+    word-spacing: 2px;
+    margin-bottom: 25px;
+    text-shadow: 1px 1px 1px black;
+}
+section a{
+    padding: 12px 30px;
+    border-radius: 4px;
+    outline: none;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 500;
+    text-decoration: none;
+    letter-spacing: 1px;
+    transition: all .5s ease;
+}
+section .learn{
+    background: orange;
+    color:#000;
+   
+}
+.learn:hover{
+     background: #00b894;
+    color: white;
+}
+section .signup{
+    background: #00b894;
+    color: white;
+   
+}
+.signup:hover{
+    background: orange;
+    color:#000;
+}
+.M1:hover{
+    color: lightgreen;
+}
+section h1{
+animation:colorchange 20s infinite alternate;
+}
+@keyframes changeback{
+    0%{ background-image: url('Madrid.jpg');}
+    20% { background-image: url('Barcelona.jpg');}
+    40% { background-image: url('valencia.jpg');}
+    60% { background-image: url('seville.jpg');}
+    80% { background-image: url('granada.jpg');}
+    100% { background-image: url('segovia.jpg');}
+}
+
+@keyframes colorchange {
+      0% {color: red;}
+      10% {color: deeppink;}
+      20% {color: orange;}
+      30% {color: yellow;}
+      40% {color: magenta;}
+      50% {color: springgreen;}
+      60% {color: blue;}
+      70% {color: brown;}
+      80% {color: maroon;}
+      90% {color: mistyrose;}
+      100% {color: silver;}
+    }
+</style>
+<head>
+ <link rel="stylesheet" type="text/css" href="style.css">
+        <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
+        </head>
+    <body>
+        <header>
+	
+            <nav >
+	<div class="logo"><h1><a href="file:///C:/Users/hp-pc/Desktop/C%20programs/Html/Website/website.html" ><img src="header_logo_spain.png"></h1></div>
+                <div class="Menu">
+                <a href="#" class="M1">Gallery</a>
+                <a href="https://www.tourspain.es/en-us" target="_blank" class="M1">About</a>
+                <a href="file:///C:/Users/hp-pc/Desktop/C%20programs/Html/Website/contact%20us%20form.html" target="_blank" class="M1">Contact Us</a>
+                </div>
+            </nav>
+                <main>
+                <section>
+                    <h1>Welcome To Spain</h1>
+                    <p>"Spain is part of you"</p>
+                    <a href="#" class="learn">learn more</a>
+                    <a href="#" class="signup" >signup here</a>
+                    </section>
+                </main>
+           
+        </header>
+    </body>
+</html>
